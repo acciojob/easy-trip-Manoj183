@@ -10,14 +10,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @Service
 public class AirportService {
-    @Autowired
-    AirportRepository repository;
+    //@Autowired
+    //AirportRepository repository;
+
+    AirportRepository repository = new AirportRepository();
     public void addAirport(Airport airport){
         repository.addAirport(airport);
     }

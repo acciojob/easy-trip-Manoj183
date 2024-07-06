@@ -14,8 +14,10 @@ import java.util.Date;
 @RestController
 @RequestMapping("EasyMyTrip")
 public class AirportController {
-    @Autowired
-    AirportService service;
+   // @Autowired
+   //AirportService service;
+
+    AirportService service = new AirportService();
     @PostMapping("/add_airport")
     public String addAirport(@RequestBody Airport airport){
 
